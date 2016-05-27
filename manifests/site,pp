@@ -1,0 +1,4 @@
+file {' /tmp/HelloPuppetMaster':
+	content => "Hello, puppet master!\n",
+}
+
