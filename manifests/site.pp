@@ -11,6 +11,6 @@ node '192.168.122.133' {
 
 node /^vm[0-9]+\.linuxmaster\.com$/ {
 #include vim_upggrade
-#include sshd
+ include sshd
 }
 
