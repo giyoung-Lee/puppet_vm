@@ -3,10 +3,8 @@ node '192.168.1.2' {
 }
 
 node '192.168.122.133' {
-	file {'/tmp/testserver':
-		content => "This is a test server. \n",
-	}
 	include sshd
+	include vim_upgrade
 }
 
 node /^vm[0-9]+\.linuxmaster\.com$/ {
